@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'SanFran';
+  src: url('./component/fonts/SanFranciscoText-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SanFran';
+  src: url('./component/fonts/SanFranciscoText-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SanFran';
+  src: url('./component/fonts/SanFranciscoText-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+*, html, body, input, button {
+  font-family: 'SanFran';
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 10px solid #FF0000;
+}

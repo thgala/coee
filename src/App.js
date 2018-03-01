@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-import './App.css';
+import './component/reset.css/index.css'
+import './App.scss';
 
+import Background from './component/background'
 import HomePage from './page/home'
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Route exact path="/" component={HomePage} />
-      </Router>
+      <div className='App'>
+        <Background />
+        <Router>
+          <Route exact path="/" component={HomePage} />
+        </Router>
+      </div>
     );
   }
 }
