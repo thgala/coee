@@ -5,6 +5,40 @@
 
   &__videoIcon {
     height: 100px;
+    position: relative;
+    
+    &:after, &:before {
+      content: ' ';
+      position: absolute;
+      cursor: pointer;
+      display: block;
+      width: 60px;
+      height: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    &:after {
+      background-image: url(./assets/ic-next.svg);
+      background-position: 50% 50%;
+      background-size: 10px auto;
+      background-repeat: no-repeat;
+    }
+
+    &:before {
+      border-radius: 30px;
+      background: #FF0000;
+      transition: all 0.15s ease;
+    }
+
+    &:hover:before {
+      background: rgba(255, 0, 0, 0.85);
+    }
+
+    &:active:before {
+      background: rgba(255, 0, 0, 0.7);
+    }
   }
   
   &__videoText {
@@ -13,7 +47,13 @@
   }
   &__videoTextInner {
     text-transform: uppercase;
-    padding: 0 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+    justify-content: flex-end;
+
+    .Text {
+      color: #FF0000;
+    }
   }
 
   &__title {
@@ -22,13 +62,14 @@
   }
   &__titleInner {
     text-transform: uppercase;
-    padding: 0 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+    justify-content: center;
   }
 
   .rotator {
     display: flex;
     align-items: center;
-    justify-content: center;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -40,5 +81,27 @@
   
   &__num {
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > div:first-child {
+      margin-bottom: 10px;
+      padding-bottom: 11px;
+      position: relative;
+
+      &:before {
+        content: ' ';
+        height: 1px;
+        opacity: 0.75;
+        width: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -25px;
+        background: #fff;
+      }
+    }
   }
 }
