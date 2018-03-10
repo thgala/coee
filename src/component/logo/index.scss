@@ -6,3 +6,10 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 998px) {
+  .Logo{
+    width: 60px;
+    height: 60px;
+  }
+}

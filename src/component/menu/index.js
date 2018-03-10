@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 
 import Text from '../text'
+import Logo from '../logo'
 
 const mock = {
   list: [
@@ -67,10 +68,10 @@ class Menu extends React.Component {
       <div className={this.block({ isOpen: isMenuOpen, })}>
         <div className={this.element('close')} onClick={actions.handleMenu} />
         <div className={this.element('content')}>
-          <div className={this.element('logo')} />
+          <Logo className={this.element('logo')} />
           <div className={this.element('list')}>
             {mock.list.map(item => (
-              <Link to={item.to} className={this.element('item')}>
+              <Link to={item.to} className={this.element('item')} onClick={actions.handleMenu}>
                 <Text value={item.title} className={this.element('itemText')} />
               </Link>
             ))}

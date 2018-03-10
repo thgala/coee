@@ -2,6 +2,10 @@
   flex: 1;
   flex-direction: column;
   display: flex;
+
+  &__logoText {
+    display: none;
+  }
   
   &__logo {
     margin-bottom: 40px;
@@ -9,5 +13,58 @@
 
   &__h1, &__h2, &__p, &__button {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .HomePage{
+
+    &__wrap {
+      padding-right: 60px;
+    }
+
+    &__logo {
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    &__h1, &__h2, &__button {
+      margin-bottom: 15px;
+    }
+
+    &__p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .HomePage{
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      padding-right: 30px;
+    }
+
+    &__logoText {
+      display: block;
+      color: #fff;
+      font-size: 12px;
+      line-height: 1.35;
+      margin-bottom: 30px;
+      opacity: 0.75;
+      font-weight: 100;
+      margin-left: 50%;
+    }
+
   }
 }

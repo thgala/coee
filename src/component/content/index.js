@@ -12,7 +12,9 @@ class Content extends React.Component {
         <SideBar />
         <div className='Content__wrap'>
           <Header />
-          {this.props.children}
+          <div className={this.props.className}>
+            {this.props.children}
+          </div>
         </div>
       </div>
     )

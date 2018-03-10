@@ -9,6 +9,11 @@ import Text from '../../component/text'
 import Button from '../../component/button'
 
 const mock = {
+  logoText: `
+  THE COLLEGE <br />
+  OF EXTRAORDINARY <br />
+  EXPERIENCES
+  `,
   text_1: `
     Be part of an immersive <br />
     conference about experience design <br />
@@ -29,7 +34,11 @@ class HomePage extends React.Component {
   render () {
     return (
       <div className={this.block()}>
-        <Content>
+        <Content className={this.element('wrap')}>
+          <div
+            className={this.element('logoText')}
+            dangerouslySetInnerHTML={{ __html: mock.logoText }}
+          />
           <Logo className={this.element('logo')} />
           <div className={this.element('content')}>
             <Text

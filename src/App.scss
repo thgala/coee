@@ -25,5 +25,12 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
   border: 5px solid #FF0000;
+}
+
+@media screen and (max-width: 719px) {
+  .App {
+    border-width: 2px;
+  }
 }

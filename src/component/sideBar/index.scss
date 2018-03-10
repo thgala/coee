@@ -50,6 +50,7 @@
     padding: 10px;
     letter-spacing: 1px;
     justify-content: flex-end;
+    text-align: right;
 
     .Text {
       color: #FF0000;
@@ -103,5 +104,68 @@
         background: #fff;
       }
     }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .SideBar{
+    width: 50px;
+
+    &__videoIcon {
+      height: 60px;
+      position: relative;
+      
+      &:after, &:before {
+        width: 36px;
+        height: 36px;
+      }
+
+      &:after {
+        background-size: 8px auto;
+      }
+
+    }
+
+    &__num {
+      height: 60px;
+      > div:first-child {
+        &:before {
+          width: 26px;
+          margin-left: -13px;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .SideBar {
+    width: 30px;
+
+    &__videoIcon {
+      height: 30px;
+      position: relative;
+      
+      &:after, &:before {
+        width: 24px;
+        height: 24px;
+      }
+
+      &:after {
+        background-size: 6px auto;
+      }
+
+    }
+
+    &__num {
+      > div:first-child {
+        &:before {
+          width: 18px;
+          margin-left: -9px;
+        }
+      }
+    }
+
   }
 }

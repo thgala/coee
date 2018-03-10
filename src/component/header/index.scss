@@ -59,3 +59,73 @@
 
   }
 }
+
+@media screen and (max-width: 998px) {
+  .Header{
+    height: 60px;
+
+    &__menuTriggerWrap {
+      width: 60px;
+    }
+
+    &__menuTrigger {
+      width: 36px;
+      height: 36px;
+
+      &:after, &:before {
+        height: 2px;
+      }
+
+      &:before {
+        width: 20px;
+        margin-bottom: 3px;
+      }
+      &:hover:before {
+        transform: translateY(-1px);
+      }
+  
+      &:after {
+        width: 16px;
+        margin-right: 4px;
+        margin-top: 2px;
+      }
+      &:hover:after {
+        transform: translateY(1px);
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .Header{
+    height: 30px;
+
+    &__menuTriggerWrap {
+      width: 30px;
+    }
+
+    &__menuTrigger {
+      width: 24px;
+      height: 24px;
+
+      &:after, &:before {
+        height: 2px;
+      }
+
+      &:before {
+        width: 16px;
+      }
+  
+      &:after {
+        width: 10px;
+        margin-right: 6px;
+      }
+
+      &:hover {
+        background: transparent;
+      }
+
+    }
+  }
+}
