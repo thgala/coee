@@ -1,9 +1,13 @@
 .HomePage{
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  
   &__logo {
     margin-bottom: 40px;
   }
 
-  &__h1, &__h2 {
+  &__h1, &__h2, &__p, &__button {
     margin-bottom: 30px;
   }
 }

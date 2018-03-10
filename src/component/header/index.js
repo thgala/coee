@@ -9,7 +9,9 @@ class Header extends React.Component {
         <div className='Header__content'>
 
         </div>
-        <div className='Header__menuTrigger' />
+        <div className='Header__menuTriggerWrap'>
+          <div className='Header__menuTrigger' />
+        </div>
       </div>
     )
   } 

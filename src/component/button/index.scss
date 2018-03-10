@@ -1,0 +1,58 @@
+.Button{
+  display: inline-flex;
+  min-height: 50px;
+  min-width: 250px;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  align-items: normal;
+  padding: 0;
+  padding-right: 50px;
+  background: none;
+  transition: all 0.15s ease;
+  outline: none;
+
+  &__content {
+    background: #FF0000;
+    border: 2px solid #FF0000;
+    border-right: 0;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.15s ease;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border: 2px solid #FF0000;
+    transition: all 0.15s ease;
+    
+    background-image: url(./assets/ic-next--red.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10px auto;
+  }
+
+  &:active {
+    padding-right: 40px;
+  }
+
+  &:hover &__content {
+    background: rgba(255, 0, 0, 0.85);
+  }
+  
+  &:active &__icon {
+    width: 40px;
+  }
+
+}

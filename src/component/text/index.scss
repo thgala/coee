@@ -2,17 +2,23 @@
   color: #fff;
   font-weight: 300;
 
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.35;
 
   &--h1 {
-    font-size: 70px;
+    font-size: 48px;
     line-height: 1.15;
+    font-weight: 300;
   }
 
   &--h2 {
-    font-size: 40px;
+    font-size: 28px;
     line-height: 1.25;
+    font-weight: 500;
+  }
+
+  &--small {
+    font-size: 14px;
   }
 
   b {

@@ -1,3 +1,44 @@
 .SideBar {
-  width: 120px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+
+  &__videoIcon {
+    height: 100px;
+  }
+  
+  &__videoText {
+    flex: 0.25;
+    position: relative;
+  }
+  &__videoTextInner {
+    text-transform: uppercase;
+    padding: 0 15px;
+  }
+
+  &__title {
+    flex: 0.75;
+    position: relative;
+  }
+  &__titleInner {
+    text-transform: uppercase;
+    padding: 0 15px;
+  }
+
+  .rotator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    transform: rotate(270deg);
+    transform-origin: 0 0%;
+  }
+  
+  &__num {
+    height: 100px;
+  }
 }

@@ -5,7 +5,7 @@ import './index.scss'
 
 const bemConfig = {
   block: 'Text',
-  modifiers: ['h1', 'h2'],
+  modifiers: ['h1', 'h2', 'small'],
 }
 
 class Text extends React.Component {
