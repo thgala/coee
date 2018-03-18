@@ -8,6 +8,9 @@ import './App.scss';
 import Background from './component/background'
 import Menu from './component/menu'
 import HomePage from './page/home'
+import ParticipantsPage from './page/participants'
+import MethodologyPage from './page/methodology'
+
 
 class App extends Component {
   state = {
@@ -32,6 +35,8 @@ class App extends Component {
           <Background />
           <Menu />
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/participants" component={ParticipantsPage} />
+          <Route exact path="/methodology" component={MethodologyPage} />
         </div>
       </Router>
     );

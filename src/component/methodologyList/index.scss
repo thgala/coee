@@ -1,0 +1,64 @@
+.MethodologyList {
+  display: flex;
+  padding-right: 100px;
+
+  &__item {
+    width: 33.33%;
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__itemWrap {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: 2px solid red;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__methodologyIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  &__methodologyTitle {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  &__methodologyDescription {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.35;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .MethodologyList {
+
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .MethodologyList {
+
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .MethodologyList {
+
+  }
+}

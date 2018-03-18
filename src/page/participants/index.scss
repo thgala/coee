@@ -1,0 +1,46 @@
+.ParticipantsPage {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+
+  &__wrap {
+    display: flex;
+    flex: 1;
+  }
+
+  &__content {
+    padding-right: 60px;
+  }
+
+  &__h1, &__h2 {
+    margin-bottom: 30px;
+  }
+
+  &__h2 {
+    max-width: 1200px;
+  }
+
+  &__sideTabs {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .ParticipantsPage {
+
+    &__h1, &__h2 {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .ParticipantsPage {
+    &__sideTabs {
+      position: fixed;
+      top: 0;
+      right: 0;
+      top: 32px;
+    }
+  }
+}

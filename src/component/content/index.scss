@@ -4,5 +4,7 @@
 
   &__wrap {
     flex: 1;
+    flex-direction: column;
+    display: flex;
   }
 }

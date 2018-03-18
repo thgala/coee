@@ -4,56 +4,10 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 import './index.scss'
+import DATA from '../../DATA'
 
 import Text from '../text'
 import Logo from '../logo'
-
-const mock = {
-  list: [
-    {
-      title: 'Home',
-      to: '/',
-    },
-    {
-      title: 'About the event',
-      to: '/about',
-    },
-    {
-      title: 'Previous editions',
-      to: '/previous-editions',
-    },
-    {
-      title: 'Get a ticket',
-      to: '/get-a-ticket',
-    },
-    {
-      title: 'Contact',
-      to: '/contact',
-    },
-  ],
-  social: [
-    {
-      title: 'Tw',
-      to: '/',
-    },
-    {
-      title: 'Fb',
-      to: '/',
-    },
-    {
-      title: 'In',
-      to: '/',
-    },
-    {
-      title: 'Blog',
-      to: '/',
-    },
-  ],
-  share: {
-    title: 'Share',
-    to: '/',    
-  }
-}
 
 const bemConfig = {
   block: 'Menu',
@@ -70,8 +24,8 @@ class Menu extends React.Component {
         <div className={this.element('content')}>
           <Logo className={this.element('logo')} />
           <div className={this.element('list')}>
-            {mock.list.map(item => (
-              <Link to={item.to} className={this.element('item')} onClick={actions.handleMenu}>
+            {DATA.menu.list.map((item, i) => (
+              <Link key={i} to={item.to} className={this.element('item')} onClick={actions.handleMenu}>
                 <Text value={item.title} className={this.element('itemText')} />
               </Link>
             ))}
@@ -79,14 +33,14 @@ class Menu extends React.Component {
         </div>
         <div className={this.element('contacts')}>
           <div>
-            {mock.social.map(item => (
-              <a href={item.to} className={this.element('contactsItem')} target='_blank'>
+            {DATA.menu.social.map((item, i) => (
+              <a key={i} href={item.to} className={this.element('contactsItem')} target='_blank'>
                 <Text value={item.title}  />
               </a>
             ))}
           </div>
-          <a href={mock.share.to} className={this.element('contactsItem')} target='_blank'>
-            <Text value={mock.share.title}  />
+          <a href={DATA.menu.share.to} className={this.element('contactsItem')} target='_blank'>
+            <Text value={DATA.menu.share.title}  />
           </a>
         </div>
       </div>

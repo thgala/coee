@@ -2,13 +2,9 @@ import React from 'react'
 import BEM from 'react-bem-classes'
 
 import './index.scss'
+import DATA from '../../DATA'
 
 import Text from '../text'
-
-const mock = {
-  text_1: `Video trailer`,
-  text_2: `The college of extraordinary experiences`,
-}
 
 const bemConfig = {
   block: 'SideBar',
@@ -59,7 +55,7 @@ class SideBar extends React.Component {
               width: videoTextInnerHeight,
               height: videoTextInnerWidth,
             }}>
-            <Text value={mock.text_1} small/>
+            <Text value={DATA.sideBar.text_1} small/>
           </div>
         </div>
         <div className={this.element('title')} ref={node => this.titleInner = node}>
@@ -69,7 +65,7 @@ class SideBar extends React.Component {
               width: titleInnerHeight,
               height: titleInnerWidth,
             }}>
-            <Text value={mock.text_2} small />
+            <Text value={DATA.sideBar.text_2} small />
           </div>
         </div>
         <div className={this.element('num')}>
