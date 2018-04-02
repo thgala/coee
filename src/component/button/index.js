@@ -5,6 +5,7 @@ import './index.scss'
 
 const bemConfig = {
   block: 'Button',
+  modifiers: ['white', 'auto'],
 }
 class Button extends React.Component {
   render () {

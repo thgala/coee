@@ -10,6 +10,8 @@ import Menu from './component/menu'
 import HomePage from './page/home'
 import ParticipantsPage from './page/participants'
 import MethodologyPage from './page/methodology'
+import TicketsPage from './page/tickets'
+import WhyPeopleJoinPage from './page/whyPeopleJoin'
 
 
 class App extends Component {
@@ -30,13 +32,15 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename="/www">
         <div className='App'>
           <Background />
           <Menu />
           <Route exact path="/" component={HomePage} />
           <Route exact path="/participants" component={ParticipantsPage} />
           <Route exact path="/methodology" component={MethodologyPage} />
+          <Route exact path="/get-a-ticket" component={TicketsPage} />
+          <Route exact path="/why-people-join" component={WhyPeopleJoinPage} />
         </div>
       </Router>
     );

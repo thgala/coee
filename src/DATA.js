@@ -18,8 +18,8 @@ const DATA = {
         to: '/get-a-ticket',
       },
       {
-        title: 'Contact',
-        to: '/contact',
+        title: 'Why people join',
+        to: '/why-people-join',
       },
     ],
     social: [
@@ -95,6 +95,18 @@ const DATA = {
       and countries, all with amazing stories.
     `,
   },
+  ticketsPage: {
+    text_1: `Tickets`,
+    text_2: `
+      Thesea are the only options of joining, but, for any type of participation,
+      you first need to apply and we’ll make sure to get back to youf you convince
+      us your place is among the other participants at the castle.
+    `,
+    button_text: `Apply to join`,
+  },
+  whyPeopleJoin: {
+    text_1: `Why people join us`,
+  },
   participantsList: [
     {
       name: 'Mark Ordesky',
@@ -154,6 +166,68 @@ const DATA = {
       description: `Pivoting based on feedback from fast interations.`,
     },   
   ],
+  ticketsList: [
+    {
+      name: `CORPORATE`,
+      price: `€7000, -`,
+      note: `8 out of 60 tickets left`,
+    },
+    {
+      name: `ACADEMIC`,
+      price: `€7000, -`,
+      note: `8 out of 60 tickets left`,
+    },
+    {
+      name: `VOLUNTEER`,
+      price: `—`,
+      note: `
+        Be part of our extraordinary team!
+        Let’s change the world togehter!
+      `,
+    },   
+  ],
+  whyList: [
+    {
+      title: `Probably the best event on Planet Earth.`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+    {
+      title: `Google, Disney, Lego, Lord of the Rings  Designit, Ikea came here and loved it.`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+    {
+      title: `There is probably nothing similar to this in the whole world, at the moment.`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+    {
+      title: `You get to learn from the best in an authentic style of event.`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+    {
+      title: `You connect with amazing people, and become part of Alumni CoEE.`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+  ]
 }
 
 export default DATA

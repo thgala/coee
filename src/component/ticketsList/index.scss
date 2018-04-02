@@ -1,0 +1,105 @@
+.TicketsList {
+  display: flex;
+  padding-right: 100px;
+
+  &__item {
+    width: 290px;
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__itemInner {
+    position: relative;
+    padding: 27px 0;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+
+    &:after, &:before {
+      content: ' ';
+      display: block;
+      width: 100%;
+      height: 27px;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      background-image: url(./assets/ticket.svg);
+      background-position: 50% -3px;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+
+    &:before {
+      top: auto;
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__itemWrap {
+    padding: 45px 30px;
+    background: red;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__ticketName {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.35;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__ticketPrice {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.35;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  &__ticketIcon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__ticketNote {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .TicketsList {
+
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .TicketsList {
+
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .TicketsList {
+
+  }
+}

@@ -5,7 +5,7 @@ import './index.scss'
 
 const bemConfig = {
   block: 'Icon',
-  modifiers: ['romb', 'round', 'square']
+  modifiers: ['romb', 'round', 'square', 'rombWhite']
 }
 class Icon extends React.Component {
   render () {

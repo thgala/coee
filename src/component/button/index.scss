@@ -55,6 +55,25 @@
     width: 40px;
   }
 
+  &--white &__content {
+    background: transparent;
+    border-color: #fff;
+  }
+
+  &--white &__icon {
+    background-image: url(./assets/ic-next.svg);
+    border-color: #fff;
+  }
+
+  &--white:hover &__content {
+    background: #fff;
+    color: red;
+  }
+
+  &--auto {
+    min-width: 0;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 998px) {
