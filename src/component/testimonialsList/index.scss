@@ -1,4 +1,44 @@
 .TestimonialsList {
   position: relative;
   width: 100%;
+
+  &__item {
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.35;
+    margin-right: 30px;
+    transform: scale(0.9);
+
+    transition: all 0.45s ease;
+
+    &--current {
+      background: red;
+      transform: scale(1);
+    }
+  }
+
+  &__itemName {
+    color: red;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+    transition: all 0.45s ease;
+  }
+
+  &__item--current &__itemName {
+    color: #fff;
+  }
+
+  &__itemRole {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__itemText {
+    color: #fff;
+    font-weight: 300;
+  }
 }

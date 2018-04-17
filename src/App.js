@@ -34,7 +34,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename='/www'>
         <div className='App'>
           <Background />
           <Menu />
