@@ -18,8 +18,16 @@ const DATA = {
         to: '/get-a-ticket',
       },
       {
+        title: 'Testimonials',
+        to: '/testimonials',
+      },
+      {
         title: 'Why people join',
         to: '/why-people-join',
+      },
+      {
+        title: 'Organizers',
+        to: '/organizers',
       },
     ],
     social: [
@@ -104,9 +112,17 @@ const DATA = {
     `,
     button_text: `Apply to join`,
   },
+  testimonialsPage: {
+    text_1: `Testimonials`,
+  },
   whyPeopleJoin: {
     text_1: `Why people join us`,
   },
+  organizersPage: {
+    text_1: `Organizers`,
+    text_2: `Participants`,
+  },
+  // LISTS
   participantsList: [
     {
       name: 'Mark Ordesky',
@@ -227,7 +243,68 @@ const DATA = {
         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
       `,
     },
-  ]
+  ],
+  testimonialsList: [
+    {
+      name: `Khui S Gory`,
+      role: `PhD in Experience Design`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+    {
+      name: `Zalupa Konya`,
+      role: `KGB Vsekh Poimayet`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+    {
+      name: `Papa Karlo`,
+      role: `Buratino bil typoy`,
+      text: `
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      `,
+    },
+  ],
+  organizersList: [
+    {
+      imageUrl: `./assets/gami.svg`,
+      name: `GAMIFICATION IN TOURISM`,
+    },
+    {
+      imageUrl: `./assets/dziobak.svg`,
+      name: `DZIOBAK STUDIOS`,
+    },
+    {
+      imageUrl: `./assets/court.svg`,
+      name: `COURTfive`,
+    },
+    {
+      imageUrl: `./assets/design.svg`,
+      name: `CULTURAL.DESIGN`,
+    },
+  ],
+  organizersListComp: [
+    {
+      imageUrl: `./assets/logo-all_p1.svg`,
+    },
+    {
+      imageUrl: `./assets/logo-all_p2.svg`,
+    },
+    {
+      imageUrl: `./assets/logo-all_p3.svg`,
+    },
+    {
+      imageUrl: `./assets/logo-all_p4.svg`,
+    },
+  ],
 }
 
 export default DATA

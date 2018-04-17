@@ -1,0 +1,11 @@
+.OrganizersPage {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+
+  &__block {
+    &:first-child {
+      margin-bottom: 60px;
+    }
+  }
+}

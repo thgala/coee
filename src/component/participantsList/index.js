@@ -3,7 +3,6 @@ import BEM from 'react-bem-classes'
 
 import './index.scss'
 import DATA from '../../DATA'
-console.log('DATA', DATA.participantsList)
 
 const bemConfig = {
   block: 'ParticipantsList',

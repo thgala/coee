@@ -1,0 +1,18 @@
+.TestimonialsPage {  
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+
+  &__wrap {
+    flex: 1;
+    flex-direction: column;
+    display: flex; 
+  }
+
+  &__content {
+    flex: 1;
+    flex-direction: column;
+    display: flex; 
+    position: relative;
+  }
+}

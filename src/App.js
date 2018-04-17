@@ -11,7 +11,9 @@ import HomePage from './page/home'
 import ParticipantsPage from './page/participants'
 import MethodologyPage from './page/methodology'
 import TicketsPage from './page/tickets'
+import TestimonialsPage from './page/testimonials'
 import WhyPeopleJoinPage from './page/whyPeopleJoin'
+import OrganizersPage from './page/organizers'
 
 
 class App extends Component {
@@ -32,7 +34,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename="/www">
+      <Router>
         <div className='App'>
           <Background />
           <Menu />
@@ -40,7 +42,9 @@ class App extends Component {
           <Route exact path="/participants" component={ParticipantsPage} />
           <Route exact path="/methodology" component={MethodologyPage} />
           <Route exact path="/get-a-ticket" component={TicketsPage} />
+          <Route exact path="/testimonials" component={TestimonialsPage} />
           <Route exact path="/why-people-join" component={WhyPeopleJoinPage} />
+          <Route exact path="/organizers" component={OrganizersPage} />
         </div>
       </Router>
     );

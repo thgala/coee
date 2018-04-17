@@ -1,0 +1,23 @@
+.organizersList {
+  display: flex;
+  &__item {
+    min-height: 180px;
+    width: 25%;
+  }
+
+  &__itemLogo {
+    min-height: 150px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  &__itemName {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.35;
+    letter-spacing: 0.3px;
+  }
+}
