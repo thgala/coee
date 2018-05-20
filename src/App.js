@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Fade from 'react-reveal/Fade'
 
 import './component/reset.css/index.css'
 import './App.scss';
 
 import Background from './component/background'
+import GlobalLoader from './component/globalLoader'
 import Menu from './component/menu'
+import Content from './component/content'
+
 import HomePage from './page/home'
 import ParticipantsPage from './page/participants'
 import MethodologyPage from './page/methodology'
@@ -19,6 +23,10 @@ import OrganizersPage from './page/organizers'
 class App extends Component {
   state = {
     isMenuOpen: false,
+    content: {
+      isReady: false,
+      status: 0,
+    }
   }
 
   getChildContext() {
@@ -30,21 +38,63 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    this.getContent()
+  }
+
+  getContent = () => {
+    const interval = setInterval(() => {
+      const { content } = this.state
+
+      if (!content.isReady) {
+        this.setState({
+          content: {
+            isReady: content.status === 99,
+            status: content.status + 1,
+          }
+        })
+      } else {
+        clearInterval(interval)
+      }
+    }, 20)
+  }
+
   handleMenu = () => this.setState(({ isMenuOpen }) => ({ isMenuOpen: !isMenuOpen }))
 
   render() {
+    const { content } = this.state
+
     return (
-      <Router basename='/www'>
+      <Router basename='/'>
         <div className='App'>
+          <GlobalLoader
+            isActive={!content.isReady}
+            status={content.status}
+          />
           <Background />
           <Menu />
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/participants" component={ParticipantsPage} />
-          <Route exact path="/methodology" component={MethodologyPage} />
-          <Route exact path="/get-a-ticket" component={TicketsPage} />
-          <Route exact path="/testimonials" component={TestimonialsPage} />
-          <Route exact path="/why-people-join" component={WhyPeopleJoinPage} />
-          <Route exact path="/organizers" component={OrganizersPage} />
+
+          <Content isReady={content.isReady}>
+            <HomePage />
+            <Fade bottom>
+              <ParticipantsPage />
+            </Fade>
+            <Fade bottom>
+              <MethodologyPage />
+            </Fade>
+            <Fade bottom>
+              <TicketsPage />
+            </Fade>
+            <Fade bottom>
+              <TestimonialsPage />
+            </Fade>
+            <Fade bottom>
+              <WhyPeopleJoinPage />
+            </Fade>
+            <Fade bottom>
+              <OrganizersPage />
+            </Fade>
+          </Content>
         </div>
       </Router>
     );

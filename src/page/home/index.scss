@@ -2,6 +2,8 @@
   flex: 1;
   flex-direction: column;
   display: flex;
+  min-height: 100vh;
+  padding-top: 100px;
 
   &__logoText {
     display: none;

@@ -1,8 +1,8 @@
 .WhyPeopleJoinPage {
-  flex: 1;
-  flex-direction: column;
   display: flex;
-
+  padding-bottom: 250px;
+  justify-content: center;
+  
   &__list {
     max-width: 1200px;
     margin: auto;
@@ -10,6 +10,7 @@
 
   &__h1, &__button {
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 

@@ -1,6 +1,10 @@
 .Content {
   display: flex;
   flex: 1;
+  padding-left: 100px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.6s ease;
 
   &__wrap {
     flex: 1;
@@ -9,5 +13,10 @@
     position: relative;
     min-width: 0;
     min-height: 0;
+  }
+
+  &--isReady {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

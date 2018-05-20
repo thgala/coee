@@ -1,8 +1,7 @@
 .TestimonialsPage {  
-  flex: 1;
-  flex-direction: column;
-  display: flex;
-
+  // display: flex;
+  padding-bottom: 250px;
+  
   &__wrap {
     flex: 1;
     flex-direction: column;
@@ -18,5 +17,6 @@
 
   &__h1 {
     margin-bottom: 30px;
+    text-align: center;
   }
 }

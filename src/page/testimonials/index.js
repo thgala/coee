@@ -15,18 +15,16 @@ class TestimonialsPage extends React.Component {
   render () {
     return (
       <div className={this.block()}>
-        <Content className={this.element('wrap')}>
-          <div className={this.element('content')}>
-            <Text
-              h1
-              value={DATA.testimonialsPage.text_1}
-              className={this.element('h1')}
-            />
-            <TestimonialsList
-              list={DATA.testimonialsList}
-            />
-          </div>
-        </Content>
+        <div className={this.element('content')}>
+          <Text
+            h1
+            value={DATA.testimonialsPage.text_1}
+            className={this.element('h1')}
+          />
+          <TestimonialsList
+            list={DATA.testimonialsList}
+          />
+        </div>
       </div>
     )
   } 

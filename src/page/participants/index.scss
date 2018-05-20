@@ -1,8 +1,7 @@
 .ParticipantsPage {
-  flex: 1;
-  flex-direction: column;
   display: flex;
-
+  padding-bottom: 250px;
+  
   &__wrap {
     display: flex;
     flex: 1;
@@ -10,6 +9,7 @@
 
   &__content {
     padding-right: 60px;
+    flex: 1;
   }
 
   &__h1, &__h2 {
